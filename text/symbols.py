@@ -1,14 +1,6 @@
 '''
 Defines the set of symbols used in text input to the model.
 '''
-'''
-# english_cleaners
-_pad        = '_'
-_punctuation = ';:,.!?¡¿—…"«»“” '
-_letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
-_letters_ipa = "ɑɐɒæɓʙβɔɕçɗɖðʤəɘɚɛɜɝɞɟʄɡɠɢʛɦɧħɥʜɨɪʝɭɬɫɮʟɱɯɰŋɳɲɴøɵɸθœɶʘɹɺɾɻʀʁɽʂʃʈʧʉʊʋⱱʌɣɤʍχʎʏʑʐʒʔʡʕʢǀǁǂǃˈˌːˑʼʴʰʱʲʷˠˤ˞↓↑→↗↘'̩'ᵻ"
-
-'''
 
 '''# japanese_cleaners
 _pad        = '_'
@@ -60,13 +52,13 @@ _punctuation = '.!? '
 _letters = 'กขฃคฆงจฉชซฌญฎฏฐฑฒณดตถทธนบปผฝพฟภมยรฤลวศษสหฬอฮฯะัาำิีึืุูเแโใไๅๆ็่้๊๋์'
 '''
 
-
+""" default
 _pad        = '_'
 _punctuation = ',.!?-~…'
 _letters = 'NQabdefghijklmnopstuvwxyzɑæʃʑçɯɪɔɛɹðəɫɥɸʊɾʒθβŋɦ⁼ʰ`^#*=ˈˌ→↓↑ '
 
 _letters_ipa = "ɑɐɒæɓʙβɔɕçɗɖðʤəɘɚɛɜɝɞɟʄɡɠɢʛɦɧħɥʜɨɪʝɭɬɫɮʟɱɯɰŋɳɲɴøɵɸθœɶʘɹɺɾɻʀʁɽʂʃʈʧʉʊʋⱱʌɣɤʍχʎʏʑʐʒʔʡʕʢǀǁǂǃˈˌːˑʼʴʰʱʲʷˠˤ˞↓↑→↗↘'̩'ᵻ" # !
-
+"""
 
 '''# shanghainese_cleaners
 _pad        = '_'
@@ -80,17 +72,18 @@ _punctuation = ',.!?~…─'
 _letters = '#Nabdefghijklmnoprstuvwxyzæçøŋœȵɐɑɒɓɔɕɗɘəɚɛɜɣɤɦɪɭɯɵɷɸɻɾɿʂʅʊʋʌʏʑʔʦʮʰʷˀː˥˦˧˨˩̥̩̃̚ᴀᴇ↑↓∅ⱼ '
 '''
 
-'''
-# Russian - from https://github.com/FENRlR/MB-iSTFT-VITS2/issues/2
+# Russian
 _pad = '_'
+# _punctuation = ';:,.!?¡¿—…"«»“” '
 _punctuation = ' !+,-.:;?«»—'
+# _letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 _letters = 'абвгдежзийклмнопрстуфхцчшщъыьэюяё'
 _letters_ipa = "ɑɐɒæɓʙβɔɕçɗɖðʤəɘɚɛɜɝɞɟʄɡɠɢʛɦɧħɥʜɨɪʝɭɬɫɮʟɱɯɰŋɳɲɴøɵɸθœɶʘɹɺɾɻʀʁɽʂʃʈʧʉʊʋⱱʌɣɤʍχʎʏʑʐʒʔʡʕʢǀǁǂǃˈˌːˑʼʴʰʱʲʷˠˤ˞↓↑→↗↘'̩'ᵻ"
-'''
 
 # Export all symbols:
-#symbols = [_pad] + list(_punctuation) + list(_letters)
-symbols = [_pad] + list(_punctuation) + list(_letters) + list(_letters_ipa) # !
+# symbols = [_pad] + list(_punctuation) + list(_letters)
+symbols = [_pad] + list(_punctuation) + \
+    list(_letters) + list(_letters_ipa)  # !
 
 # Special symbol ids
 SPACE_ID = symbols.index(" ")
