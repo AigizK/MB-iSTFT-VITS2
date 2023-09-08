@@ -78,7 +78,9 @@ _pad = '_'
 _punctuation = ' !+,-.:;?«»—'
 # _letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 _letters = 'абвгдежзийклмнопрстуфхцчшщъыьэюяё'
+_letters = ''
 _letters_ipa = "ɑɐɒæɓʙβɔɕçɗɖðʤəɘɚɛɜɝɞɟʄɡɠɢʛɦɧħɥʜɨɪʝɭɬɫɮʟɱɯɰŋɳɲɴøɵɸθœɶʘɹɺɾɻʀʁɽʂʃʈʧʉʊʋⱱʌɣɤʍχʎʏʑʐʒʔʡʕʢǀǁǂǃˈˌːˑʼʴʰʱʲʷˠˤ˞↓↑→↗↘'̩'ᵻ"
+_letters_ipa+="xfmasiyk\"pjzrtdvbne^`uol"
 
 # Export all symbols:
 # symbols = [_pad] + list(_punctuation) + list(_letters)
