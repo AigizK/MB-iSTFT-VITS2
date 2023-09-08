@@ -72,10 +72,9 @@ _punctuation = ',.!?~…─'
 _letters = '#Nabdefghijklmnoprstuvwxyzæçøŋœȵɐɑɒɓɔɕɗɘəɚɛɜɣɤɦɪɭɯɵɷɸɻɾɿʂʅʊʋʌʏʑʔʦʮʰʷˀː˥˦˧˨˩̥̩̃̚ᴀᴇ↑↓∅ⱼ '
 '''
 
-# Russian
 _pad = '_'
 # _punctuation = ';:,.!?¡¿—…"«»“” '
-_punctuation = ' !+,-.:;?«»—'
+_punctuation = ' !+,-.:;?—'
 # _letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 _letters = 'абвгдежзийклмнопрстуфхцчшщъыьэюяё'
 _letters = ''
@@ -83,9 +82,7 @@ _letters_ipa = "ɑɐɒæɓʙβɔɕçɗɖðʤəɘɚɛɜɝɞɟʄɡɠɢʛɦɧħɥʜ
 _letters_ipa+="xfmasiyk\"pjzrtdvbne^`uol"
 
 # Export all symbols:
-# symbols = [_pad] + list(_punctuation) + list(_letters)
-symbols = [_pad] + list(_punctuation) + \
-    list(_letters) + list(_letters_ipa)  # !
+symbols = [_pad] + list(_punctuation) + list(_letters) + list(_letters_ipa)
 
 # Special symbol ids
 SPACE_ID = symbols.index(" ")
