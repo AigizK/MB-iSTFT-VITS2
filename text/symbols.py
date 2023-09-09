@@ -84,5 +84,14 @@ _letters_ipa+="xfmasiyk\"pjzrtdvbne^`uol"
 # Export all symbols:
 symbols = [_pad] + list(_punctuation) + list(_letters) + list(_letters_ipa)
 
+import json
+
+config = json.load(open("config.json"))
+sorted_by_id = sorted(config["phoneme_id_map"].items(), key=lambda x:x[1])
+
+symbols=[]
+for ch,id in sorted_by_id:
+    symbols+=[ch]
 # Special symbol ids
 SPACE_ID = symbols.index(" ")
+

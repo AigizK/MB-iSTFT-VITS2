@@ -28,6 +28,10 @@ def basic_cleaners(text):
     text = collapse_whitespace(text)
     return text
 
+def nothing_cleaners(text):
+    text = text.lower()
+    return text
+
 
 def fix_g2pk2_error(text):
     new_text = ""
